@@ -1,38 +1,210 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1db954, #191414);
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  margin-bottom: 10px;
+}
+
+.search-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.search {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.clear-search {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-search:hover {
+  background-color: #1ed760;
+}
+
+.add-music-form input,
+.add-music-form button {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.add-music-form input,
+.add-music-form button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-music-form button {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-music-form button:hover {
+  background-color: #1ed760;
+}
+
+.clear-button {
+  background-color: #dc3545;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}
+
+.music-list,
+.playlist {
+  margin-top: 20px;
+}
+
+.music-list li,
+.playlist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-list li button,
+.playlist li button {
+  padding: 6px 12px;
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.music-list li button:hover,
+.playlist li button:hover {
+  background-color: #1ed760;
+}
+
+.played {
+  background-color: #28a745;
+}
+
+.played:hover {
+  background-color: #218838;
+}
+
+.add-to-playlist {
+  background-color: #1db954;
+}
+
+.add-to-playlist:hover {
+  background-color: #1ed760;
+}
+
+.clear-playlist {
+  background-color: #ff6347;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.clear-playlist:hover {
+  background-color: #ff4833; /* Darker shade of coral on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.music-list {
+  list-style: none;
+  padding: 0;
+}
+
+.music-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.album-art-container {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.album-art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.music-details {
+  margin-left: 20px;
+}
+
+.music-details div {
+  margin-bottom: 5px;
+}
+
+.music-details strong {
+  font-size: 18px;
+}
+
+button {
+  margin-left: 20px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
